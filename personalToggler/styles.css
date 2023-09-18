@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(7, 1, 1);
+     transition: 0.5s;
+}
+body.active{
+    background-color: aliceblue;
+     transition: 0.5s;
+}
+
+
+
+#TogOnline{
+    position:relative;
+    cursor: pointer;   
+    width: 320px;
+    height:160px;
+    border-radius: 100px;
+    background:linear-gradient(to bottom,rgb(122, 119, 119),rgb(59, 59, 59));
+    transition: 0.5s;
+    box-shadow: inset 0 8px 10px rgba(41, 37, 37, 0.1),
+                inset 0 4px 4px rgb(70, 67, 67),
+                inset 0 -4px 4px rgb(31, 28, 28) ;
+
+}
+#TogOnline.active{
+     transition: 0.5s;
+    background: rgb(217, 218, 219);
+    box-shadow: inset 0 2px 60px rgba(0,0,0,0.1),
+                inset 0 2px 8px rgba(0,0,0,0.1),
+                inset 0 -4px 8px rgba(0,0,0,0.1);  
+}
+
+#TogOnline .indicator{
+    position: absolute;
+    top:0;
+    left:0;
+    width:160px;
+    height:160px;
+    background:linear-gradient(to bottom,#14111144,#07070722);
+    border-radius: 50%;
+    box-shadow: 0 8px 40px rgb(7, 1, 1),
+                inset 0 4px 4px rgb(102, 101, 99),
+                inset 0 -4px 4px rgb(102, 101, 99);
+    transition: 0.5px;  
+    cursor: pointer; 
+     transition: 0.5s;         
+}
+
+ #TogOnline.active .indicator  {
+transition: 0.5s;   
+background:rgb(211, 206, 206);
+left: 160px;
+box-shadow: 0 8px 40px rgb(7, 1, 1),
+                inset 0 4px 4px rgb(102, 101, 99),
+                inset 0 -4px 4px rgb(102, 101, 99);
+
+}
